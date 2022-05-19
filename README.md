@@ -1,4 +1,4 @@
-# Bem vindo ao meu portfólio :happy:
+# Bem vindo ao meu portfólio <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" width="50px"/>
 
 Olá, seja bem vindo ao meu portfólio, me chamo **Gustavo**, e sou um futuro **Desenvolvedor Front-End**!
 

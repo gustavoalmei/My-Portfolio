@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -25,40 +26,51 @@
         </nav>
       </header>
       <section class="main">
-        <article class="me">
-          <img src="assets/memoji.webp" alt="Memoji"><br>
-          <span class="title">Me chamo Gustavo Almeida</span>
-          <p>Seja bem vindo ao meu portfólio.</p>
-        </article>
-        <article id="container-terminal" class="container-terminal ">
-          <div id="terminal" class="terminal">
-            <div class="header">
-              <div class="local">
-                <i class="fa-solid fa-terminal"></i>
-                <span>C:\Windows\system32\cmd.exe</span>
-              </div>
-              <div class="icon">
-                <div class="butts mini">
-                  <div class="line"></div>
-                </div>
-                <div class="butts">
-                  <div class="line maxi"></div>
-                </div>
-                <div class="butts close-icon">
-                  <div class="line icon-close"></div>
-                  <div class="line icon-close"></div>
-                </div>
-              </div>
-            </div>
-            <div class="body">
-              <p class="letters">
-                C:\Users\Gustavo Almeida> Selecione uma opção acima.
-              </p>
-            </div>
-            <img id="iconCMD" src="./assets/icon-cmd.png" alt="" >
+      <article id="me">
+          <div class="content">
+            <img src="assets/memoji.webp" alt="Memoji">
+            <span class="title">Me chamo Gustavo Almeida</span>
+            <p>Seja bem vindo ao meu portfólio.</p>
           </div>
-        </article>
-      </section>
+          <div id="container-terminal" class="container-terminal ">
+            <div id="terminal" class="terminal">
+              <div class="header">
+                <div class="local">
+                  <i class="fa-solid fa-terminal"></i>
+                  <span>C:\Windows\system32\cmd.exe</span>
+                </div>
+                <div class="icon">
+                  <div class="butts mini">
+                    <div class="line"></div>
+                  </div>
+                  <div class="butts">
+                    <div class="line maxi"></div>
+                  </div>
+                  <div class="butts close-icon">
+                    <div class="line icon-close"></div>
+                    <div class="line icon-close"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="body">
+                <p class="letters">
+                  C:\Users\Gustavo Almeida> Selecione uma opção acima.
+                </p>
+              </div>
+              <img id="iconCMD" src="./assets/icon-cmd.png" alt="" >
+            </div>
+          </div>
+      </article>
+      <!-- <div class="line-art"></div> -->
+      <article id="projects">
+        <div class="container">
+          <div class="project">1</div>
+          <div class="project">2</div>
+          <div class="project">3</div>
+          <div class="project">4</div>
+        </div>
+      </article>
+    </section>
       <footer class="footer">
         Desenvolvido com <span class="hearth">&#128151 & &#9749</span> por mim.
       </footer>

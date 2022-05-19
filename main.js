@@ -18,12 +18,21 @@ function eventTerminal() {
   closeTerminal.addEventListener("click", () => {
     containerTerminal.classList.add("close-container");
     terminal.classList.add("close-terminal");
+
+    if (
+      containerTerminal.classList[1] == "mini-container" &&
+      terminal.classList[1] == "mini-terminal"
+    ){
+      containerTerminal.classList.remove("mini-container");
+      terminal.classList.remove("mini-terminal");
+    }
   });
 
   iconCMD.addEventListener("click", () => {
     containerTerminal.classList.remove("close-container");
     terminal.classList.remove("close-terminal");
   });
+
 }
 eventTerminal();
 

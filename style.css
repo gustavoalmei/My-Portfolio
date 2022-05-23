@@ -15,7 +15,7 @@ html,
 body {
   width: 100%;
   height: 100vh;
-  user-select: none;
+  user-select: text;
 }
 
 body::-webkit-scrollbar {
@@ -44,6 +44,11 @@ main{
     "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr 1fr 1fr 25px;
+}
+
+article ::selection{
+  background-color: #fff;
+  color: black;
 }
 
 .header{
@@ -90,8 +95,25 @@ main{
 
 #me{
   width: 100%;
-  background: linear-gradient(0deg, transparent , rgba(0,0,0,.5) 95%);
+  height: 100vh;
   z-index: 1;
+  background-image: url("./assets/mountain.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#me .container{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(0deg, transparent , rgba(0,0,0,.5) 95%);
 }
 
 #me .content{
@@ -118,9 +140,55 @@ main{
   width: 15em;
 }
 
+#me .aside-contact{
+  width: 60px;
+  height: 100%;
+  padding: 5px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#me .aside-contact .nav-contact{
+  position: relative;
+  list-style-type: none;
+}
+
+#me .aside-contact .contact img{
+  width: 30px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#me .aside-contact .nav-contact li::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #fff;
+  margin: auto;
+}
+
+#me .aside-contact .nav-contact li:last-child::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #fff;
+  margin: auto;
+}
+
 .container-terminal{
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -135,6 +203,7 @@ main{
   width: 850px;
   height: 500px;
   position: relative;
+  border-radius: 10px;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .95);
@@ -149,53 +218,6 @@ main{
   to{bottom: 0;}
 }
 
-/* terminal close, open, minimize */
-
-/* minimize */
-.mini-container{
-  width: 100%;
-  display: flex;
-  bottom: 0;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 20px;
-  transition: height 250ms linear;
-}
-
-.mini-terminal{
-  width: 850px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, .95);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  transition: height 250ms linear;
-  animation: move 250ms linear;
-}
-
-.mini .body{
-  visibility: hidden;
-}
-
-/* close */
-.close-container{
-  height: 300px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.close-container .close-terminal{
-  position: fixed;
-  right: 25px;
-  bottom: 60px;
-  width: 60px;
-  height: 60px;
-  border-radius: 15px;
-}
-
-.close-container .close-terminal div{
-  visibility: hidden;
-}
-
 /* icon CMD */
 #iconCMD{
   visibility: hidden;
@@ -203,16 +225,6 @@ main{
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.close-terminal #iconCMD{
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .5s linear;
-  width: 60px;
-  padding: 5px;
-  right: 0px;
-  bottom: 0px;
 }
 
 /* Header terminal */
@@ -225,84 +237,20 @@ main{
   display: flex;
   flex-direction: row;
   position: relative;
-  user-select: none;
 }
 
 .terminal .img{
   height: 100%;
 }
 
-/* icon & buttons */
-.terminal .header .icon {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 180px;
-  height: 100%;
-  cursor: pointer;
-}
-
-.terminal .header .icon .butts{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 1px 15px;
-}
-
-.terminal .header .icon .butts .line{
-  width: 10px;
-  height: 2px;
-  position: relative;
-  background-color: #fff;
-}
-
-.terminal .header .icon .butts .maxi{
-  width: 10px;
-  height: 10px;
-  border: 2px solid #fff;
-  background-color: transparent;
-}
-
-.terminal .header .icon .butts .icon-close{
-  width: 10px;
-  height: 2px;
-  transform: rotate(50deg);
-  position: absolute;
-  background-color: #fff;
-}
-
-.terminal .header .icon .butts .icon-close:nth-child(2){
-  width: 10px;
-  height: 2px;
-  transform: rotate(-50deg);
-  position: absolute;
-  background-color: #fff;
-}
-
-.terminal .header .icon .butts:hover{
-  background-color: rgba(255, 255, 255, .2);
-}
-
-.terminal .header .icon .butts:nth-child(3):hover{
-  background-color: rgba(255, 0, 0, 1);
-}
-
 /* Text terminal */
-.local span{
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .terminal .body{
   width: 100%;
   height: calc(100% - 30px);
   overflow-y: scroll;
   padding: 10px;
   color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .05);
 }
 
 .terminal .letters{
@@ -310,8 +258,16 @@ main{
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
-  line-height: 18px;
-  margin-bottom: 15px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.terminal .letters a{
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .terminal .body p:last-child:after{
@@ -320,16 +276,6 @@ main{
   height: 10px;
   border-right: 4px solid #fff;
   animation: blink 1s step-end infinite;
-}
-
-.terminal .body .letters::selection{
-  background-color: #fff;
-  color: black;
-}
-
-.terminal .body .user-pc::selection{
-  background-color: #fff;
-  color: black;
 }
 
 @keyframes blink {
@@ -352,29 +298,63 @@ main{
 }
 
 #projects{
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 #projects .container{
-  width: 80%;
-  height: 80%;
+  width: 1024px;
+  margin: auto;
   border-radius: 15px;
   border: 1px solid rgba(0,0,0, 0.2);
   background-color: rgba(0,0,0, 0.2);
   box-shadow: 20px 20px 50px rgba(0,0,0, 0.4);
+  padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
 }
 
 #projects .container .project{
-  background-color: red;
+  width: 300px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+#projects .container .project img{
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+#projects .container .project .title{
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #fff;
+}
+
+#projects .container .project p{
+  font-size: 0.8em;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#projects .container .project:hover{
+  bottom: 5px;
+  transition: bottom .3s linear;
 }
 
 /* Footer */
@@ -383,4 +363,8 @@ main{
   background-color: var(--bar-desktop);
   text-align: center;
   color: #fff;
+}
+
+@media screen {
+  
 }

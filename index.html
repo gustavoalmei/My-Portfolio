@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/memoji-happy.webp" type="image/x-icon">
     <title>My Portfolio</title>
   </head>
   <body>
@@ -27,46 +25,128 @@
       </header>
       <section class="main">
       <article id="me">
+        <div class="container">
           <div class="content">
-            <img src="assets/memoji.webp" alt="Memoji">
+            <img 
+            src="assets/memoji.webp" 
+            alt="Memoji">
             <span class="title">Me chamo Gustavo Almeida</span>
             <p>Seja bem vindo ao meu portfólio.</p>
           </div>
           <div id="container-terminal" class="container-terminal">
-            <div id="terminal" class="terminal">
+            <div 
+            id="terminal" 
+            class="terminal">
               <div class="header">
                 <div class="local">
                   <i class="fa-solid fa-terminal"></i>
                   <span>C:\Windows\system32\cmd.exe</span>
                 </div>
-                <div class="icon">
-                  <div class="butts mini">
-                    <div class="line"></div>
-                  </div>
-                  <div class="butts">
-                    <div class="line maxi"></div>
-                  </div>
-                  <div class="butts close-icon">
-                    <div class="line icon-close"></div>
-                    <div class="line icon-close"></div>
-                  </div>
-                </div>
               </div>
               <div class="body">
-                <p class="letters">
+                <p 
+                class="letters">
                   C:\Users\Gustavo Almeida> Selecione uma opção acima.
                 </p>
               </div>
-              <img id="iconCMD" src="./assets/icon-cmd.png" alt="" >
             </div>
           </div>
+          <div class="aside-contact">
+            <ul class="nav-contact">
+              <li class="contact">
+                <a target="_blank" href="mailto:gustavo.almei2@hotmail.com">
+                  <img src="./assets/email.png" alt="icon email"/>
+                </a>
+              </li>
+              <li class="contact">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5551996195414&text=Ol%C3%A1%20Gustavo%2C%20Vamos%20conversar!">
+                  <img src="./assets/phone.png" alt="icon phone"/>
+                </a>
+              </li>
+              <li class="contact">
+                <a target="_blank" href="https://www.linkedin.com/in/gustavoalmeidda/">
+                  <img src="./assets/linkedin.png" alt="icon linkedin"/>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </article>
       <article id="projects">
-        <div class="container">
-          <div class="project">1</div>
-          <div class="project">2</div>
-          <div class="project">3</div>
-          <div class="project">4</div>
+        <div class="container ">
+          <div class="project">
+              <a 
+              class="title"
+              href="https://github.com/gustavoalmei/Card-Summary" 
+              target="_blank">
+              <img 
+              src="/assets/card-summary.png" 
+              alt="Projeto Card Summary">
+                Order summary card solution
+              </a>
+              <p 
+              class="description">This is a solution to the Order summary card challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
+          </div>
+          <div class="project">
+            <a
+            class="title"
+            href="https://github.com/gustavoalmei/NLW"
+            target="_blank">
+            <img 
+            src="./assets/nlw-card.png" 
+            alt="Projeto NLW Card">
+            Crachá virtual NLW</a>
+            <p 
+            class="description">Crachá virtual criado na trilha Origin na NLW Heat</p>
+          </div>
+          <div class="project">
+            <a
+            class="title"
+            href="https://github.com/gustavoalmei/Search-user-GitHub"
+            target="_blank">
+            <img 
+            src="./assets/search-user.png" 
+            alt="Projeto Search user GitHub">
+            Search user GitHub</a>
+            <p 
+            class="description">Projeto voltado para mostrar perfil do GitHub do usuário.</p>
+          </div>
+          <div class="project">
+            <a
+            class="title"
+            href="https://github.com/gustavoalmei/PlayerMusic"
+            target="_blank">
+            <img 
+            src="./assets/player-music.png" 
+            alt="Projeto Player Music">
+            Player Music</a>
+            <p 
+            class="description">Player de Musica com algumas funções já conhecidas.</p>
+          </div>
+          <div class="project">
+            <a
+            class="title"
+            href="https://github.com/gustavoalmei/7daysOfCode"
+            target="_blank">
+            <img 
+            src="./assets/7days.png" 
+            alt="Projeto Player Music">
+            7 Days Of Code </a>
+            <p 
+            class="description">Desafio Alura de 7 dias praticando HTML CSS.</p>
+          </div>
+          <div class="project">
+            <a
+            class="title"
+            href="https://github.com/gustavoalmei/Pagina-de-captura"
+            target="_blank">
+            <img 
+            src="./assets/pagina-captura.png" 
+            alt="Projeto Player Music">
+            Página de captura 📷</a>
+            <p 
+            class="description">Neste repositório, você irá encontrar o projeto de Página de captura. Espero que goste! 😄.</p>
+          </div>
         </div>
       </article>
     </section>
@@ -74,6 +154,7 @@
         Desenvolvido com <span class="hearth">&#128151 & &#9749</span> por mim.
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

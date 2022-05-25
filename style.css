@@ -131,7 +131,7 @@ article ::selection{
   font-weight: 600;
 }
 
-#me .content p{
+#me .content h2{
   color: rgba(255, 255, 255, .4);
   font-size: 1.5em;
   font-weight: 400;
@@ -233,11 +233,22 @@ article ::selection{
   width: 100%;
   height: 30px;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   position: relative;
+}
+.terminal .header .local{
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.terminal .header .local p{
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .terminal .img{

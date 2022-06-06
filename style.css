@@ -95,7 +95,6 @@ article ::selection{
 
 #me{
   width: 100%;
-  height: 100vh;
   z-index: 1;
   background-image: url("./assets/mountain.jpg");
   background-position: center;

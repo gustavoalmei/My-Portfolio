@@ -6,7 +6,7 @@ let listNav = document.querySelectorAll("#list>li");
 for (let i = 0; i < listNav.length; i++) {
   listNav[i].addEventListener("click", () => {
     let ativo = document.getElementsByClassName("active");
-    
+
     ativo[0].className = ativo[0].className.replace(" active", "");
     listNav[i].classList.add("active");
   });
@@ -27,6 +27,7 @@ time.forEach((dates) => {
   }
 });
 
+// Config Day
 function DayWeeks(date) {
   const daysWeek = [
     "Domingo",
@@ -45,20 +46,21 @@ function Day(date) {
   let dia = date.getDate().toString(),
     mes = (date.getMonth() + 1).toString(),
     ano = date.getFullYear(),
-    diaF = (dia.length == 1) ? "0" + dia : dia,
-    mesF = (mes.length == 1) ? "0" + mes : mes,
+    diaF = dia.length == 1 ? "0" + dia : dia,
+    mesF = mes.length == 1 ? "0" + mes : mes,
     dateF = `${diaF}/${mesF}/${ano}`;
   document.querySelector("[data-time=day]").textContent = dateF;
 }
 
+// Config Time
 function Timer() {
   let date = new Date();
   let hora = date.getHours().toString(),
     min = date.getMinutes().toString(),
     seg = date.getSeconds().toString(),
-    horaF = (hora.length) == 1 ? "0" + hora : hora,
-    minF = (min.length) == 1 ? "0" + min : min,
-    segF = (seg.length) == 1 ? "0" + seg : seg,
+    horaF = hora.length == 1 ? "0" + hora : hora,
+    minF = min.length == 1 ? "0" + min : min,
+    segF = seg.length == 1 ? "0" + seg : seg,
     timeF = `${horaF}:${minF}:${segF}`;
   document.querySelector("[data-time=time]").textContent = timeF;
 }
@@ -66,8 +68,9 @@ setInterval(() => {
   Timer();
 }, 1000);
 
-const checkbox = document.getElementById("checkbox")
+// Mode Light/Dark
+const checkbox = document.getElementById("checkbox");
 
-checkbox.addEventListener("change", ()=>{ 
-  document.getElementsByClassName("main")[0].classList.toggle("light")
+checkbox.addEventListener("change", () => {
+  document.getElementsByClassName("main")[0].classList.toggle("light");
 });

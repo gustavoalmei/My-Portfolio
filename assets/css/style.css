@@ -5,17 +5,17 @@
   font-family: "Roboto Mono", monospace;
 }
 
-article{
+article {
   background-color: #272727;
   transition: background-color 250ms ease;
 }
 
-.light{
+.light {
   background-color: #fff;
 }
 
-footer{
-  background-color: #1F1F1F;
+footer {
+  background-color: #1f1f1f;
   color: #fff;
   padding: 2rem;
   text-align: center;

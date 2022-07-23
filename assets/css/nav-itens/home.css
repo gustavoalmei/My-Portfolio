@@ -81,6 +81,11 @@
 
 .links i {
   margin: 0.5rem 0;
+  color: #fff;
+}
+
+.light .links i {
+  color: #000;
 }
 
 .links a {

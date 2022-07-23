@@ -16,12 +16,14 @@
 }
 
 /* select */
-.text__home span::selection, .text__home p::selection{
+.text__home span::selection,
+.text__home p::selection {
   background-color: #fff;
   color: #000;
 }
 
-.light .text__home span::selection, .text__home p::selection{
+.light .text__home span::selection,
+.light .text__home p::selection {
   background-color: #000;
   color: #fff;
 }

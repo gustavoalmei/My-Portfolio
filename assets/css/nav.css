@@ -20,20 +20,31 @@ header{
   align-items: center;
 }
 
-#list .itens a{
+#list .itens{
   width: 100%;
-  color: #fff;
-  text-decoration: none;
+  height: 2rem;
+  margin: .5rem;
+}
+
+#list .itens{
   text-align: center;
-  padding: .55rem 2rem;
+  padding: .55rem 1rem;
   cursor: pointer;
 }
 
-#list .itens.active a{
-  color: #272727;
+.itens.active{
   background-color: #DEFF00;
   transition: ease 500ms background-color;
   border-radius: 1.25em;
+}
+
+#list .itens a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#list .itens.active a{
+color: #272727;
 }
 
 .change-theme{

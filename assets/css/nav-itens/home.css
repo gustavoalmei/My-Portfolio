@@ -79,19 +79,19 @@
   flex-direction: column;
 }
 
-.links i {
+.links a {
   margin: 0.5rem 0;
   color: #fff;
-}
-
-.light .links i {
-  color: #000;
-}
-
-.links a {
-  color: #000;
   transition: color 350ms ease;
 }
+
+.light .links a {
+  color: #000;
+}
+
+/* .links a {
+  color: #000;
+} */
 
 .links a:nth-child(1):hover {
   color: #0073c6;

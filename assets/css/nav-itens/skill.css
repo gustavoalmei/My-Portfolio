@@ -1,0 +1,139 @@
+.skill{
+  max-width: 1024px;
+  margin: auto;
+  padding: 5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__skill {
+  color: #FFF;
+  background-color: #e9e9e931;
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.light .container__skill {
+  background-color: #E9E9E9;
+}
+
+.box__skill{
+  width: 15rem;
+  height: 10rem;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: .5rem;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.light .container__skill {
+  color: #272727;
+}
+
+.light .box__skill{
+  border-color: #272727;
+}
+
+.box__skill h3{
+  position: absolute;
+  bottom: 20px;
+}
+
+.box__skill:nth-child(1) {
+  background-image: url("../../img/icons/html-icon.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  z-index: auto;
+  filter: grayscale(100%);
+}
+
+.box__skill:nth-child(2) {
+  background-image: url("../../img/icons/css-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  filter: grayscale(100%);
+}
+
+.box__skill:nth-child(3) {
+  background-image: url("../../img/icons/js-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  filter: grayscale(100%);
+}
+
+.box__skill:nth-child(4) {
+  background-image: url("../../img/icons/git-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  filter: grayscale(100%);
+}
+
+.box__skill:nth-child(5) {
+  background-image: url("../../img/icons/github-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  filter: grayscale(100%);
+}
+
+.box__skill:nth-child(6) {
+  background-image: url("../../img/icons/objective-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  filter: grayscale(100%);
+}
+
+.box__skill:hover {
+  filter: grayscale(0%);
+  transition: filter 0.25s linear;
+}
+
+@media screen and (max-width: 480px) {
+  .skill{
+    padding: 2rem;
+  }
+  .container__skill{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill{
+    padding: 2rem;
+  }
+  .container__skill{
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .box__skill{
+    width: 100%;
+    height: 12rem;
+    border-radius: .5rem;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .skill{
+    padding: 2rem;
+  }
+
+}

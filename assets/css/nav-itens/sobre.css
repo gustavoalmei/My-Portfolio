@@ -1,0 +1,108 @@
+.sobre{
+    max-width: 1024px;
+    margin: auto;
+
+    padding: 5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-prog{
+    background-image: url("../../img/programmingg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 20rem;
+    margin: 2rem;
+}
+
+/* container default */
+
+.container__sobre{
+    width: 100%;
+    background-color: #e9e9e931;
+    border-radius: 1rem;
+    color: #E9E9E9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* img memoji */
+
+.memoji__sobre{
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../../img/memoji-happy.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: .5rem;
+}
+
+/* selection */
+.titulo__sobre span::selection, .titulo__sobre p::selection{
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .light .text__home span::selection, .text__home p::selection{
+    background-color: #000;
+    color: #fff;
+  }
+
+/* text */
+
+.titulo__sobre{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.box__sobre p{
+    margin: .5rem 0;
+    line-height: 1.2rem;
+}
+
+.box__sobre{
+    padding: 1.5rem;
+}
+
+/* light mode */
+.light .container__sobre{
+    background-color: #E9E9E9;
+    color: #272727;
+}
+
+@media screen and (max-width: 480px) {
+    .sobre{
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .image-prog{
+        display: none;
+    }
+
+    .container__sobre{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobre{
+        padding: 2rem;
+    }
+
+    .image-prog{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre{
+        padding: 2rem;
+    }
+}

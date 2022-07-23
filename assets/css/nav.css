@@ -1,0 +1,107 @@
+header{
+  background-color: #1F1F1F;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.nav-bar{
+  width: 30rem;
+}
+
+.nav-bar #list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list .itens a{
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: .55rem 2rem;
+  cursor: pointer;
+}
+
+#list .itens.active a{
+  color: #272727;
+  background-color: #DEFF00;
+  transition: ease 500ms background-color;
+  border-radius: 1.25em;
+}
+
+.change-theme{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.label{
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #E9E9E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fas{
+  position: absolute;
+}
+
+.fa-moon{
+  bottom: -20px;
+}
+
+.dark .fa-sun{
+  visibility: hidden;
+}
+
+.dark .fa-moon{
+  bottom: initial;
+}
+
+#checkbox{
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  header{
+    padding: 1rem;
+  }
+  .nav-bar#list{
+    width: 100%;
+  }
+  #list.itens{
+    width: 5rem;
+  }
+  .nav-bar #list{
+    flex-direction: column;
+    text-align: center;
+  }
+  .change-theme{
+    position: fixed;
+    bottom: 1rem;
+    left: .9rem;
+    top: initial;
+  }
+  .label{
+    border-color: #1F1F1F;
+  }
+}

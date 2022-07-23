@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Roboto Mono", monospace;
+}
+
+article{
+  background-color: #272727;
+  transition: background-color 250ms ease;
+}
+
+.light{
+  background-color: #fff;
+}
+
+footer{
+  background-color: #1F1F1F;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 700;
+}

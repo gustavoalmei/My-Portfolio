@@ -4,155 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/memoji-happy.webp" type="image/x-icon">
-    <title>My Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/memoji-happy.webp"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/nav-itens/home.css" />
+    <link rel="stylesheet" href="./assets/css/nav-itens/sobre.css" />
+    <link rel="stylesheet" href="./assets/css/nav-itens/skill.css" />
+    <title>Gustavo</title>
   </head>
   <body>
-    <main>
+    <main class="dark">
       <header class="header">
+        <div class="change-theme">
+          <input type="checkbox" id="checkbox" class="checkbox">
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </label>
+        </div>
         <nav class="nav-bar">
           <ul id="list">
-            <li>Sobre</li>
-            <li>Projetos</li>
-            <li>Experiências</li>
-            <li>Conhecimento</li>
-            <li>Contato</li>
+            <li class="itens active"><a href="#home">Home</a></li>
+            <li class="itens "><a href="#sobre">Sobre</a></li>
+            <li class="itens "><a href="#skill">Hard Skill</a></li>
           </ul>
         </nav>
       </header>
-      <section class="main">
-      <article id="me">
-        <div class="container">
-          <div class="content">
-            <img 
-            src="assets/memoji.webp" 
-            alt="Memoji">
-            <h1 class="title">Me chamo Gustavo Almeida</h1>
-            <h2>Seja bem vindo ao meu portfólio.</h2>
-          </div>
-          <div id="container-terminal" class="container-terminal">
-            <div 
-            id="terminal" 
-            class="terminal">
-              <div class="header">
-                <div class="local">
-                  <i class="fa-solid fa-terminal"></i>
-                  <p>C:\Windows\system32\cmd.exe</p>
-                </div>
+      <article class="main">
+        <section class="home" id="home">
+          <div class="main__container">
+            <div class="text__home">
+              <p>
+                Hey,eu sou o</p>
+                <span class="text__nome">
+                  Gustavo Almeida
+                </span>
+                <p>Front-End</p>
               </div>
-              <div class="body">
-                <p 
-                class="letters">
-                  C:\Users\Gustavo Almeida> Selecione uma opção acima.
-                </p>
-              </div>
+              <div class="main__img"></div>
+            <div class="main__time">
+              <span class="main__times" data-time="week">Dia da semana</span>
+              <span class="main__times" data-time="day">00/00/0000</span>
+              <span class="main__times" data-time="time">00:00:00</span>
+            </div>
+            <div class="links">
+              <a href="mailto:gustavo.almei2@hotmail.com" target="_blank">
+                <i class="fa-solid fa-2x fa-envelope"></i>
+              </a>
+              <a href="https://linkedin.com/in/gustavoalmeidda" target="_blank">
+                <i class="fa-brands fa-2x fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/gustavoalmei" target="_blank">
+                <i class="fa-brands fa-2x fa-github"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=5551996195414" target="_blank">
+                <i class="fa-brands fa-2x fa-whatsapp"></i>
+              </a>
+              <a href="https://codepen.io/gustavoalmei" target="_blank">
+                <i class="fa-brands fa-2x fa-codepen"></i>
+              </a>
             </div>
           </div>
-          <div class="aside-contact">
-            <ul class="nav-contact">
-              <li class="contact">
-                <a target="_blank" href="mailto:gustavo.almei2@hotmail.com">
-                  <img src="./assets/email.png" alt="icon email"/>
-                </a>
-              </li>
-              <li class="contact">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=5551996195414&text=Ol%C3%A1%20Gustavo%2C%20Vamos%20conversar!">
-                  <img src="./assets/phone.png" alt="icon phone"/>
-                </a>
-              </li>
-              <li class="contact">
-                <a target="_blank" href="https://www.linkedin.com/in/gustavoalmeidda/">
-                  <img src="./assets/linkedin.png" alt="icon linkedin"/>
-                </a>
-              </li>
-            </ul>
+        </section>
+        <section class="sobre" id="sobre">
+          <div class="image-prog"></div>
+          <div class="container__sobre">
+            <div class="memoji__sobre"></div>
+            <h1 class="titulo__sobre">Sobre mim</h1>
+            <div class="box__sobre">
+              <p>
+                Como você viu me chamo Gustavo, atualmente atuo como Suporte de TI em uma Instituição de Ensino, estou cursando Engenharia de Software, moro em Santa Cruz do Sul/RS, faço alguns cursos em plataformas de ensino como por exemplo a Alura, outros sites também, e também procuro algo no Youtube pra dar uma ajudinha hehe.</p>
+                <p>Não gosto de falar que sou apaixonado por tecnologia, mas é uma área que me deixa impressionado com a quantidade de resultados que ela pode dar, o auxilio da tecnologia é uma coisa absurda (no bom sentido é claro), e quando vejo como ela é usada, onde é usada, fico igual uma criançinha admirada com o brinquedo novo.</p>
+                <p>Não costumo ficar falando sobre meu objetivo profissional, mas enfim, tenho como objetivo entrar na área de desenvolvimento, podendo auxiliar as pessoas atráves do código, mostrando o que sei fazer, e sabe o que é mais legal? eu sei que vou chegar lá :).</p>
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="skill" id="skill">
+          <div class="container__skill">
+            <div class="box__skill">
+              <h3>HTML</h3>
+            </div>
+            <div class="box__skill">
+              <h3>CSS</h3>
+            </div>
+            <div class="box__skill">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="box__skill">
+              <h3>Git</h3>
+            </div>
+            <div class="box__skill">
+              <h3>GitHub</h3>
+            </div>
+            <div class="box__skill">
+              <h3>Embusca de mais linguagens</h3>
+            </div>
+          </div>
+        </section>
       </article>
-      <article id="projects">
-        <div class="container ">
-          <div class="project">
-              <a 
-              class="title"
-              href="https://github.com/gustavoalmei/Card-Summary" 
-              target="_blank">
-              <img 
-              src="/assets/card-summary.png" 
-              alt>
-                Order summary card solution
-              </a>
-              <p 
-              class="description">This is a solution to the Order summary card challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
-          </div>
-          <div class="project">
-            <a
-            class="title"
-            href="https://github.com/gustavoalmei/NLW"
-            target="_blank">
-            <img 
-            src="./assets/nlw-card.png" 
-            alt>
-            Crachá virtual NLW</a>
-            <p 
-            class="description">Crachá virtual criado na trilha Origin na NLW Heat</p>
-          </div>
-          <div class="project">
-            <a
-            class="title"
-            href="https://github.com/gustavoalmei/Search-user-GitHub"
-            target="_blank">
-            <img 
-            src="./assets/search-user.png" 
-            alt>
-            Search user GitHub</a>
-            <p 
-            class="description">Projeto voltado para mostrar perfil do GitHub do usuário.</p>
-          </div>
-          <div class="project">
-            <a
-            class="title"
-            href="https://github.com/gustavoalmei/PlayerMusic"
-            target="_blank">
-            <img 
-            src="./assets/player-music.png" 
-            alt>
-            Player Music</a>
-            <p 
-            class="description">Player de Musica com algumas funções já conhecidas.</p>
-          </div>
-          <div class="project">
-            <a
-            class="title"
-            href="https://github.com/gustavoalmei/7daysOfCode"
-            target="_blank">
-            <img 
-            src="./assets/7days.png" 
-            alt>
-            7 Days Of Code </a>
-            <p 
-            class="description">Desafio Alura de 7 dias praticando HTML CSS.</p>
-          </div>
-          <div class="project">
-            <a
-            class="title"
-            href="https://github.com/gustavoalmei/Pagina-de-captura"
-            target="_blank">
-            <img 
-            src="./assets/pagina-captura.png" 
-            alt>
-            Página de captura 📷</a>
-            <p 
-            class="description">Neste repositório, você irá encontrar o projeto de Página de captura. Espero que goste! 😄.</p>
-          </div>
-        </div>
-      </article>
-    </section>
-      <footer class="footer">
-        Desenvolvido com <span class="hearth">&#128151 & &#9749</span> por mim.
-      </footer>
     </main>
-    <script src="main.js"></script>
+    <footer>
+      <p>Feito com ❤️ por mim.</p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

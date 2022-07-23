@@ -89,10 +89,6 @@
   color: #000;
 }
 
-/* .links a {
-  color: #000;
-} */
-
 .links a:nth-child(1):hover {
   color: #0073c6;
 }
